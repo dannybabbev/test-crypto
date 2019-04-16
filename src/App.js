@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  testShuffleSpeed,
+} from './utils/shuffling';
 
 class App extends Component {
+  componentDidMount() {
+    testShuffleSpeed();
+  }
+
   render() {
     return (
       <div className="App">
